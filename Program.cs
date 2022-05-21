@@ -6,7 +6,8 @@ namespace Jumper
     {
         static void Main(string[] args)
         {
-            
+            Director Director = new Director();
+            Director.GameLoop();
 
         }
     }
