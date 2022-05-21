@@ -1,0 +1,1 @@
+//collects and returns a 1 letter string from the user.

@@ -1,6 +1,6 @@
 using System;
 
-namespace hilo
+namespace Jumper
 {
     class RandomWord
     {
