@@ -2,28 +2,24 @@ using System;
 
 namespace Jumper
 {
-    class Director
+  class Director
+  {
+    //atributes
+    private bool EndGame=false;
+
+    //constructor
+    public Director()
     {
-      static void Main(string[] args)
+      EndGame GameOver = new EndGame();
+
+    }
+
+    public GameLoop()
+    {
+      while(playing)
       {
-        //atributes
-        private bool EndGame=false;
-
-        //constructor
-        public Director()
-        {
-          EndGame GameOver = new EndGame();
-
-        }
-
-        public GameLoop()
-        {
-          while(playing)
-          {
-            EndGame=GameOver.EndGameCheck();//needs string FoundWord and Bool Wrong(from Checker).
-          }
-        }
-
-      }  
-    }    
-}
+        EndGame=GameOver.EndGameCheck();//needs string FoundWord and Bool Wrong(from Checker).
+      }
+    }
+  }  
+}    
