@@ -7,7 +7,6 @@ namespace Jumper
       static void Main(string[] args)
       {
         //atributes
-        private bool Playing=true;
         private bool EndGame=false;
 
         //constructor
@@ -22,10 +21,6 @@ namespace Jumper
           while(playing)
           {
             EndGame=GameOver.EndGameCheck();//needs string FoundWord and Bool Wrong(from Checker).
-            if(EndGame)
-            {
-              Playing=false;
-            }
           }
         }
 
