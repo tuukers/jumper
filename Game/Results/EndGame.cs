@@ -17,7 +17,7 @@ namespace Jumper
         }
 
         //methods
-        private GetFoundWord(string FoundWord1)
+        private string GetFoundWord(string FoundWord1)
         {
             FoundWord = FoundWord1;
             return FoundWord;
