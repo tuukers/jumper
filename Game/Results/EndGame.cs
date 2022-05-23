@@ -5,18 +5,26 @@ namespace Jumper
     class EndGame
     {
         //atributes
-        private string MisteryWord;
+        private string MysteryWord;
         private string FoundWord;
         private int MistakeCount = 0;
         private bool EndGame=false;
 
         //constructor
-        public EndGame(string RandomWord)
+        public EndGame()
         {
-            this.MisteryWord = RandomWord;
+
         }
 
         //methods
+
+        private string GetSecretWord() {
+            RandomWord word = new RandomWord();
+
+            MysteryWord = word.GetSecretWord();
+        }
+
+
         private string GetFoundWord(string FoundWord1)
         {
             FoundWord = FoundWord1;
