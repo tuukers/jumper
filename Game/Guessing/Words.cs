@@ -7,23 +7,30 @@ namespace Jumper
 
         // Attributes
         // list of randoms word
-        private string word;
-        private int selector;
+        private string secretWord;
+        private string[] wordList = new string["pizza", "lasagna", "fettuccine", "breadstick"]; 
 
 
         // Constructor
         public RandomWord()
         {
-            cardValue = DrawCard();
+            secretWord = GetNewWord();
         }
 
-        private string makeWord() 
+        private string GetNewWord() 
         {
             Random random = new Random();
-            selector=
+            
+            num = random.Next(1,wordList.Length);
+
+            string word = wordList[num];
+
             return word;
         }
+
+        public string GetSecretWord() {
+            return secretWord;
+        }
+
     }   
 }
-
-//
