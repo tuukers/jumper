@@ -14,10 +14,10 @@ namespace Jumper
         // Constructor
         public RandomWord()
         {
-            secretWord = GetNewWord();
+            secretWord = NewWord();
         }
 
-        private string GetNewWord() 
+        private string NewWord() 
         {
             Random random = new Random();
             
