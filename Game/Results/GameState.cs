@@ -2,10 +2,10 @@ using System;
 
 namespace Jumper
 {
-    class EndGame
+    class GameState
     {
         //atributes
-        private string MysteryWord;
+        private string MisteryWord;
         private string FoundWord;
         private int MistakeCount = 0;
         private bool EndGame=false;
@@ -17,14 +17,6 @@ namespace Jumper
         }
 
         //methods
-
-        private string GetSecretWord() {
-            RandomWord word = new RandomWord();
-
-            MysteryWord = word.GetSecretWord();
-        }
-
-
         private string GetFoundWord(string FoundWord1)
         {
             FoundWord = FoundWord1;
@@ -48,12 +40,12 @@ namespace Jumper
 
         public bool Checkloss(bool Wrong)
         {
-            if(worng)
+            if(Wrong)
             {
                 MistakeCount+=1;
             }
 
-            if (MistakeCount==5)
+            if (MistakeCount==4)
             {
                 Console.WriteLine("You Lost. Better luck next time.");
                 EndGame = true;
