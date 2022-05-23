@@ -11,9 +11,9 @@ namespace Jumper
         private bool EndGame=false;
 
         //constructor
-        public EndGame()
+        public EndGame(string secretWord)
         {
-
+            this.MisteryWord = secretWord;
         }
 
         //methods

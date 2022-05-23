@@ -6,19 +6,25 @@ namespace Jumper
   {
     //atributes
     private bool EndGame=false;
+    private string secretWord;
 
     //constructor
     public Director()
     {
-      EndGame GameOver = new EndGame();
-
+      RandomWord Word = new RandomWord();
+      this.secretWord = Word.GetSecretWord();
+      Checker Checker = new Checker();
+      ParaTrooper paraTrooper = new ParaTrooper();
+      UserInterface UI = new UserInterface();
+      GameState GameOver = new GameState(this.secretWord);
     }
 
-    public GameLoop()
+    public void GameLoop()
     {
       while(playing)
       {
-        EndGame=GameOver.EndGameCheck();//needs string FoundWord and Bool Wrong(from Checker).
+        
+        EndGame = GameOver.EndGameCheck();//needs string FoundWord and Bool Wrong(from Checker).
       }
     }
   }  
