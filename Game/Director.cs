@@ -48,6 +48,7 @@ namespace Jumper
         {
           paraTrooper.DisplayParaBoi();
           isPlaying = false;
+          Console.WriteLine($"The word was: {secretWord}");
         }       
       }
     }
