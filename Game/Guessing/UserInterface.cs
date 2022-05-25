@@ -11,16 +11,20 @@ namespace Jumper
         }
 
         // Direct user with given prompt and get one letter string
-        public void ReadLetter(string prompt)
+
+        public void DisplayBlankWord(string[] blankWord) 
         {
-            Console.Write(prompt);
-            return Console.ReadLine();
+            for(int i = 0; i < blankWord.Length; i++)
+            {
+                Console.Write(blankWord[i]);
+            }
         }
 
-        // Display given text on UI 
-        public void WriteText(string text)
+        public string ReadLetter()
         {
-            Console.WriteLine(text);
+            Console.Write("Guess a letter [a-z]: ");
+            string input = Console.ReadLine();
+            return input;
         }
     }
 } 

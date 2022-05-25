@@ -5,25 +5,21 @@ namespace Jumper
     class ParaTrooper
     {
         //attributes
-        private int MistakeCount;
+        public int mistakeCount;
 
         //Constructor
         public ParaTrooper()
         {
-            this.MistakeCount = 0;
+            this.mistakeCount = 0;
         }
 
         //Methods
-
-        public void DisplayParaBoi(bool Wrong)
+        public void DisplayParaBoi()
         {
-            if(Wrong)
-            {
-                this.MistakeCount += 1;
-            }
 
-            if(this.MistakeCount==0)
+            if(this.mistakeCount==0)
             {
+                Console.WriteLine();
                 Console.WriteLine("  ___");
                 Console.WriteLine(@" /___\");
                 Console.WriteLine(@" \   /");
@@ -34,8 +30,10 @@ namespace Jumper
                 Console.WriteLine(" ");
                 Console.WriteLine("^^^^^^^");
             }
-            else if(this.MistakeCount == 1)
+            else if(this.mistakeCount == 1)
             {
+                Console.WriteLine();
+                Console.WriteLine();
                 Console.WriteLine(@" /___\");
                 Console.WriteLine(@" \   /");
                 Console.WriteLine(@"  \ /");
@@ -45,8 +43,10 @@ namespace Jumper
                 Console.WriteLine(" ");
                 Console.WriteLine("^^^^^^^");
             }
-            else if(this.MistakeCount == 2)
+            else if(this.mistakeCount == 2)
             {
+                Console.WriteLine();
+                Console.WriteLine();
                 Console.WriteLine(@" \   /");
                 Console.WriteLine(@"  \ /");
                 Console.WriteLine("   o");
@@ -55,8 +55,10 @@ namespace Jumper
                 Console.WriteLine(" ");
                 Console.WriteLine("^^^^^^^");
             }
-            else if(this.MistakeCount == 3)
+            else if(this.mistakeCount == 3)
             {
+                Console.WriteLine();
+                Console.WriteLine();
                 Console.WriteLine(@"  \ /");
                 Console.WriteLine("   o");
                 Console.WriteLine(@"  /|\");
@@ -64,8 +66,10 @@ namespace Jumper
                 Console.WriteLine(" ");
                 Console.WriteLine("^^^^^^^");
             }
-            else if(this.MistakeCount == 4)
+            else if(this.mistakeCount == 4)
             {
+                Console.WriteLine();
+                Console.WriteLine();
                 Console.WriteLine("*Censored*");
                 Console.WriteLine("^^^^^^^");
             }

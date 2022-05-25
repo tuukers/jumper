@@ -8,7 +8,7 @@ namespace Jumper
         // Attributes
         // list of randoms word
         private string secretWord;
-        private string[] wordList = new string["pizza", "lasagna", "fettuccine", "breadstick"]; 
+        private string[] wordList = {"pizza", "lasagna", "fettuccine", "breadstick"}; 
 
 
         // Constructor
@@ -21,7 +21,7 @@ namespace Jumper
         {
             Random random = new Random();
             
-            num = random.Next(1,wordList.Length);
+            int num = random.Next(1,wordList.Length);
 
             string word = wordList[num];
 

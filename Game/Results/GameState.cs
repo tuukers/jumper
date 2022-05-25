@@ -5,67 +5,59 @@ namespace Jumper
     class GameState
     {
         //atributes
-        private string MisteryWord;
-        private string FoundWord;
-        private int MistakeCount = 0;
-        private bool EndGame=false;
+        private string mysteryWord;
+        public string[] blankWord;
 
         //constructor
-        public EndGame(string secretWord)
+        public GameState(string secretWord)
         {
-            this.MisteryWord = secretWord;
+            this.mysteryWord = secretWord;
+            this.blankWord = new string [secretWord.Length];
+
+            for(int i = 0; i < secretWord.Length; i++){
+                blankWord[i] = "_";
+            }
         }
 
         //methods
-        private string GetFoundWord(string FoundWord1)
+        public bool checkGuess(string guess)
         {
-            FoundWord = FoundWord1;
-            return FoundWord;
-        }
-
-        public bool CheckWin(string FoundWord1)
-        {
-            this.FoundWord=GetFoundWord(FoundWord1);
-            if (this.FoundWord == this.MisteryWord)
+            if(mysteryWord.Contains(guess))
             {
-                Console.WriteLine("Congradulations you landed safley!");
-                EndGame = true;
-                return EndGame;
-            }
+                return true;
+            } 
             else
             {
-                return EndGame;
+                return false;
             }
         }
 
-        public bool Checkloss(bool Wrong)
+        public void updateBlankWord(string guess)
         {
-            if(Wrong)
+            for(int i=0; i<mysteryWord.Length; i++)
             {
-                MistakeCount+=1;
+                if(guess == mysteryWord[i].ToString())
+                {
+                    blankWord[i] = guess;
+                }
             }
+        }
 
-            if (MistakeCount==4)
+        public bool CheckWinLoss(int mistakeCount)
+        {
+            if (String.Concat(blankWord) == mysteryWord)
+            {
+                Console.WriteLine("Congratulations you landed safely!");
+                return true;
+            }
+            else if (mistakeCount == 4)
             {
                 Console.WriteLine("You Lost. Better luck next time.");
-                EndGame = true;
-                return EndGame;
+                return true;
             }
-            else
-            {
-                return EndGame;
+            else {
+                return false;
             }
-        }
-
-        public bool EndGameCheck(String FoundWord1,bool wrong)
-        {
-            this.FoundWord=GetFoundWord(FoundWord1);
-            this.EndGame=CheckWin(this.FoundWord);
-            if(this.EndGame=False)
-            {
-                this.EndGame=CheckLoss(wrong);
-            }
-            return this.EndGame;
         }
     }
 }
