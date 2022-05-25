@@ -31,6 +31,5 @@ namespace Jumper
         public string GetSecretWord() {
             return secretWord;
         }
-
     }   
 }
