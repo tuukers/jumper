@@ -46,6 +46,7 @@ namespace Jumper
 
         if(gameOver) 
         {
+          paraTrooper.DisplayParaBoi();
           isPlaying = false;
         }       
       }

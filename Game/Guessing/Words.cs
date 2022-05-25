@@ -21,7 +21,7 @@ namespace Jumper
         {
             Random random = new Random();
             
-            int num = random.Next(1,wordList.Length);
+            int num = random.Next(0,wordList.Length);
 
             string word = wordList[num];
 

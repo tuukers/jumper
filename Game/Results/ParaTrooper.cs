@@ -70,7 +70,9 @@ namespace Jumper
             {
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("*Censored*");
+                Console.WriteLine("   x");
+                Console.WriteLine(@"  /|\");
+                Console.WriteLine(@"  / \");
                 Console.WriteLine("^^^^^^^");
             }
         }
