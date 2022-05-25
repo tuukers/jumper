@@ -6,7 +6,6 @@ namespace Jumper
   {
     //atributes
     private bool isPlaying = true;
-    private bool EndGame=false;
     private string secretWord;
 
     //constructor
