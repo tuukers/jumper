@@ -9,5 +9,9 @@ The project has 5 classes including the Director class. The User interface displ
 Required software:
 C#
 
-Contributors:
-Ethan Graham gra20072@byui.edu
+Contributors:<br>
+Ethan Graham gra20072@byui.edu<br>
+Ryan Madsen - mad19002@byui.edu<br>
+Colby Hale - hal19029@byui.edu<br>
+Diego Baeza - bae18003@byui.edu<br>
+Ryan Funk - fun20009@byui.edu
