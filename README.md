@@ -11,7 +11,7 @@ The project has 5 classes including the Director class. The User interface displ
 C#
 
 # Contributors:<br>
-Ethan Graham gra20072@byui.edu<br>
+Ethan Graham - gra20072@byui.edu<br>
 Ryan Madsen - mad19002@byui.edu<br>
 Colby Hale - hal19029@byui.edu<br>
 Diego Baeza - bae18003@byui.edu<br>
