@@ -8,7 +8,7 @@ namespace Jumper
         // Attributes
         // list of randoms word
         private string secretWord;
-        private string[] wordList = {"pizza", "lasagna", "fettuccine", "breadstick"}; 
+        private string[] wordList = {"pizza", "lasagna", "fettuccine", "breadstick","Salad"}; 
 
 
         // Constructor
